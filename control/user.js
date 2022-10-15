@@ -1,16 +1,18 @@
-
 const createUser = async (req, res) => {
 
+    const { nome, email, senha } = req.body
+    
     try{
+
         return res.status(200).json("Ok")
     }catch (error){
         return res.status(500).json(error.message)
     }
-
-   
+  
 }
 
 const listUser = async (req, res) => {
+    
     try{
         return res.status(200).json("Ok")
     }catch (error){
@@ -27,7 +29,6 @@ const updateUser = async (req, res) => {
     }
 
 }
-
 
 module.exports = {
     createUser,
