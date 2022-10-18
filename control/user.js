@@ -1,8 +1,16 @@
+const bcrypt = require('bcrypt');
+const userSchemas = require('../validations/userSchemas');
+
+
+
 const createUser = async (req, res) => {
 
+
     const { nome, email, senha } = req.body
-    
+
     try{
+        await userSchemas.validate(req.body);
+
 
         return res.status(200).json("Ok")
     }catch (error){
