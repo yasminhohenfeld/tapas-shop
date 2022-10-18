@@ -13,7 +13,7 @@ route.patch('/user', user.updateUser);
 
 
 route.post('/buy', buy.buytacos);
-route.get('/tacos', buy.listtacos);
+route.get('/tapas', buy.listtapas);
 
 
 module.exports = route

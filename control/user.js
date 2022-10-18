@@ -1,20 +1,24 @@
 const bcrypt = require('bcrypt');
-const userSchemas = require('../validations/userSchemas');
+const { registerUserSchema } = require('../validations/userSchemas');
+const { selectUser } = require('../databases')
 
 
 
 const createUser = async (req, res) => {
 
-
     const { nome, email, senha } = req.body
 
     try{
-        await userSchemas.validate(req.body);
+        await registerUserSchema.validate(req.body);
 
+        const resultado = await selectUser(email)
+    
 
-        return res.status(200).json("Ok")
+        console.log (resultado)
+
+        return res.status(200).json("Ok");
     }catch (error){
-        return res.status(500).json(error.message)
+        return res.status(500).json(error.message);
     }
   
 }

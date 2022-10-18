@@ -7,7 +7,7 @@ create table usuario (
     senha varchar NOT NULL
 );
 
-create table tacos (
+create table tapas (
     id serial primary key,
     produto varchar NOT NULL, 
     preco int NOT NULL

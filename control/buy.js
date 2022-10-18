@@ -1,5 +1,5 @@
  
-const buytacos = async (req, res) => {
+const buytapas = async (req, res) => {
     try{
         return res.status(200).json("Ok")
     }catch (error){
@@ -8,7 +8,7 @@ const buytacos = async (req, res) => {
    
 }
 
-const listtacos = async (req, res) => {
+const listtapas = async (req, res) => {
     try{
         return res.status(200).json("Ok")
     }catch (error){
@@ -18,6 +18,6 @@ const listtacos = async (req, res) => {
 }
 
 module.exports = {
-    buytacos,
-    listtacos
+    buytapas,
+    listtapas
 }
