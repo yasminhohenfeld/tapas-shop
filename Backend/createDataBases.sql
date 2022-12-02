@@ -1,4 +1,4 @@
-CREATE DATABASE tacos_shop
+CREATE DATABASE tapas_shop
 
 create table usuario (
     id serial primary key,

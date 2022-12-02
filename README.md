@@ -15,7 +15,7 @@ Para executar o projeto, será necessário ter instalado:
 
 Para instalar as dependências do projeto:
 
-```npm install``
+```npm install```
 
 Para rodar a aplicação
 

@@ -12,7 +12,7 @@ route.get('/user', user.listUser);
 route.patch('/user', user.updateUser);
 
 
-route.post('/buy', buy.buytacos);
+route.post('/buy', buy.buytapas);
 route.get('/tapas', buy.listtapas);
 
 
