@@ -4,8 +4,6 @@ const { selectUser } = require('../databases')
 const db = require ("../databases")
 
 
-
-
 const createUser = async (req, res) => {
 
     const { nome, email, senha } = req.body
