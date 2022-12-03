@@ -4,15 +4,36 @@
 
 
 .App-header {
-  background-color: #282c34;
+  background-color: black;
   min-height: 100vh;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  font-size: calc(20px + 2vmin);
+  /* color: white; */
+}
+
+.App-text{
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
 }
+
+.App-image {
+  display: flex;
+  height: 400px;
+  /* width: 80%; */
+  align-items: center; 
+  flex-direction: column;
+  justify-content: center;
+
+
+}
+
 
 .App-link {
   color: #61dafb;

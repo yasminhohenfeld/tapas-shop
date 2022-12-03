@@ -2,11 +2,18 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div>
+      <div>
         Bem-vindo a loja de Tapas!
-      </header>
+        <img src='tapas-espanholas.webp' alt= "" />
+
+
+      </div>
+
     </div>
+     
+    
+  
   );
 }
 
