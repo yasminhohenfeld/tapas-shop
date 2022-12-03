@@ -12,7 +12,7 @@ const query = (sql, param) => {
     return pool.query(sql, param);
 };
 
-const selectUser = async (email) =>{
+const selectUser = async (email) => {
 
     const sqlSelect = 'select email, senha, nome, id from public.usuario where email=$1'
     const paramsSelect = [email]
@@ -24,21 +24,9 @@ const selectUser = async (email) =>{
     return results.rows[0]
 }
 
-//consertar o insert
-// const insertUser = async (dados) => {
-//     const sqlInsert = 'insert into public.usuario dados values (nome, email, senha)'
-//     const paramsSelect = [dados]
-//     const results = await query(sqlInsert, paramsSelect)
 
-//     if (results.rowCount === 0){
-//         return null
-//     }
-//     return results.rows[0]
-// }
 
 module.exports = {
     query,
-    selectUser,
-    insertUser
-} 
-
+    selectUser
+}

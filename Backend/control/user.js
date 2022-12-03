@@ -1,6 +1,7 @@
 const bcrypt = require('bcrypt');
 const { registerUserSchema } = require('../validations/userSchemas');
-const { selectUser, insertUser } = require('../databases')
+const { selectUser } = require('../databases')
+const db = require ("../databases")
 
 
 
@@ -21,16 +22,11 @@ const createUser = async (req, res) => {
         const criptografiaSenha = await bcrypt.hash(senha, 10);
 
 
-        //consertar essa parte do código
-        // const user = {
-        //     nome: nome,
-        //     email: email,
-        //     senha: criptografiaSenha        
-        // }
+        const user = await db.query(`insert into public.usuario (nome, email, senha) values ('${nome}', '${email}', '${criptografiaSenha}')`)
 
-        // console.log (user)
-
-        // await insertUser(user)
+        if (user.rowCount === 0){
+            return res.status(400).json ("Não foi possível cadastrar o seu usuário, por favor tente novamente!")
+        }
         
         return res.status(200).json("Usuário cadastrado com sucesso!");
 
