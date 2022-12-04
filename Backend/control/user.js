@@ -2,6 +2,7 @@ const bcrypt = require('bcrypt');
 const { registerUserSchema } = require('../validations/userSchemas');
 const { selectUser } = require('../databases')
 const db = require ("../databases");
+const verifyLogin = require('../middleware/verifyLogin')
 
 
 
@@ -38,8 +39,8 @@ const createUser = async (req, res) => {
 const listUser = async (req, res) => {
     
     try{
-        
-        return res.status(200).json("Ok")
+       
+        return res.status(200).json(req.user)
     }catch (error){
         return res.status(500).json(error.message)
     }

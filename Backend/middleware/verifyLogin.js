@@ -23,10 +23,8 @@ const verifyLogin = async (req, res, next) => {
     return res.status(400).send("Usuario não encontrado!!")
    }
 
-    req.user = userFound.rows[0].id
+    req.user = userFound.rows[0]
 
-    console.log (req.user)
-    
    
     next();
   } catch (error) {
