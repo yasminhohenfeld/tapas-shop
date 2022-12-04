@@ -12,11 +12,14 @@ const login = async (req, res) => {
 
         const user = await selectUser(email);
 
+
         if (user === null){
             return res.status(400).json ("Não existe um usuário cadastrado com esse email!");
         }
 
-        const token = await jwt.sign({ id: selectUser.id }, "yamin", { expiresIn: '8h' });
+
+        const token = await jwt.sign({ id: user.id }, "yamin", { expiresIn: '8h' });
+
 
         const dados = {
             id: user.id,
