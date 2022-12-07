@@ -33,7 +33,7 @@ function App() {
             <div>
             <label>
               Senha:
-              <input type="senha" name="senha" required />
+              <input type="password" name="senha" required />
             </label>
             </div>
                   
