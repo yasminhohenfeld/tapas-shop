@@ -27,10 +27,12 @@
 .App-text-two{
   color: yellow;
   display: flex;
-  /* justify-content: center; */
   width: 300px; 
-  margin-left: auto;
-  margin-right: auto; 
+  margin-left: 1200px;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+
 }
 
 .App-image {
