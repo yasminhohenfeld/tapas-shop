@@ -8,7 +8,9 @@ function App() {
           <div class= "App-text">
           LOJA DE TAPAS
           </div>
-
+          <div class="text-two">
+          Cadastre-se e ganhe 20% de desconto em sua primeira compra!
+          </div>
           <p class="form">
             <form>
               <div>
@@ -16,25 +18,21 @@ function App() {
                 Nome:
                 <input type="text" name="name" required />
               </label>
-              </div>
-              
+              </div>             
               <div>
               <label>
                 Email:
                 <input type="email" name="email" required />
               </label>
               </div>
-
               <div>
               <label>
                 Senha:
                 <input type="password" name="senha" required />
               </label>
-              </div>
-                    
+              </div>                  
               <input class="btn" type="submit" value="Cadastrar" />
-            </form>
-          
+            </form>       
           </p>
         </div>
 
@@ -42,12 +40,8 @@ function App() {
         <img src='tapas-espanholas.webp' alt= "" />
         </div> */}
 
-        
-     
-
     </div>
-     
-    
+        
   
   );
 }

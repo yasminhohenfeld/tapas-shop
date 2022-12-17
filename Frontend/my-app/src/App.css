@@ -1,10 +1,8 @@
 .box {
   display: flex;
   justify-content: flex-end;
-  /* text-align: ; */
-  
+  position: relative;
 }
-
 
 .btn:hover{
   background: yellow;
@@ -15,22 +13,31 @@
 .App-header {
   background-color: black;
   min-height: 100vh;
-
 }
 
 .App-text{
   color: white;
   font-size: calc(20px + 2vmin);
   letter-spacing: 10px;
-  margin: 150px 0px 0px 2000px;
-  display: flex;
+  position: relative;
+  top: 150px;
+  left: 500px;
+  
+}
+
+.text-two{
+  color: yellow;
+  position: relative;
+  top: 220px;
+  left: 150px
 }
 
 .form{
   color: yellow;
   display: flex;
-  margin: 300px 200px 0px 0px;
-  padding-top: 90px;
+  position: relative;
+  top: 250px;
+  right: 300px;
 }
 
 .App-image {
