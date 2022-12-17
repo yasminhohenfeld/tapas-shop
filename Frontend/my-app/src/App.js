@@ -32,7 +32,7 @@ function App() {
               </label>
               </div>
                     
-              <input type="submit" value="Cadastrar" />
+              <input class="btn" type="submit" value="Cadastrar" />
             </form>
           
           </p>
