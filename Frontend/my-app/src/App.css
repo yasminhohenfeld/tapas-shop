@@ -42,9 +42,24 @@
 
 .App-image {
   display: flex;
-  justify-content: flex-start;
-  height: 400px;
-  margin-top: 80px;
+  position: relative;
+  width: auto;
+  height: auto;
+  right: 300px;
+  bottom: 100px;
+  max-width: 30px;
+  max-height: 3800px;
+}
+
+.flag {
+  position: relative;
+  left: 900px;
+  bottom: 300px;
+  opacity: 0.1;
+  height: auto;
+  width: auto;
+  max-width: 10px;
+  max-height: 20px;
 }
 
 

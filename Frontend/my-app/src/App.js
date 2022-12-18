@@ -3,7 +3,8 @@ import './App.css';
 function App() {
   return (
     <div class="App-header">
-      
+
+     
         <div class="box">
           <div class= "App-text">
           LOJA DE TAPAS
@@ -36,9 +37,14 @@ function App() {
           </p>
         </div>
 
-        {/* <div class="App-image">
+        <div class="App-image">
         <img src='tapas-espanholas.webp' alt= "" />
-        </div> */}
+        </div>
+
+        <div class="flag">
+        <img src='bandeira-espanha.png' alt= "" />
+      </div>
+      
 
     </div>
         
