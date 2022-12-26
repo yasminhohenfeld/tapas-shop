@@ -45,24 +45,13 @@
 .App-image {
   display: flex;
   position: relative;
-  width: auto;
-  height: auto;
   right: 300px;
-  bottom: 100px;
-  max-width: 30px;
-  max-height: 3800px;
+  bottom: 50px;
+  max-width: 3%;
+  opacity: 0.4;
+  max-height: 380%;
 }
 
-.flag {
-  position: relative;
-  left: 900px;
-  bottom: 300px;
-  opacity: 0.1;
-  height: auto;
-  width: auto;
-  max-width: 10px;
-  max-height: 20px;
-}
 
 
 .App-link {

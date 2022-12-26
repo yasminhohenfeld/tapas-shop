@@ -40,10 +40,6 @@ function App() {
         <div class="App-image">
         <img src='tapas-espanholas.webp' alt= "" />
         </div>
-
-        <div class="flag">
-        <img src='bandeira-espanha.png' alt= "" />
-      </div>
       
 
     </div>
