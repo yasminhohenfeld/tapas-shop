@@ -34,10 +34,12 @@
 
 .form{
   color: yellow;
-  display: flex;
   position: relative;
   top: 250px;
   right: 300px;
+  display: grid;
+  grid-template-columns: 200px;
+  
 }
 
 .App-image {
